@@ -1,14 +1,12 @@
 [
   {
     "title": "ChatApp",
-    "imageSrc": "projects/project.png",
     "description": "This is a project made to learn the latest languages by building an app.",
     "skills": ["React", "Express", "Node", "Vite", "JavaScript", "Tailwind CSS", "MongoDB"],
     "source": "https://github.com/Ostap200488/ChatApp"
   },
   {
     "title": "POS",
-    "imageSrc": "projects/project.png",
     "description": "A full-stack POS (Point of Sale) web app with authentication, order management, and Stripe payment integration.",
     "skills": [
       "React",
@@ -27,7 +25,6 @@
   },
   {
     "title": "E-Commerce",
-    "imageSrc": "projects/project.png",
     "description": "AI-powered customer support chatbot built with Next.js, Tailwind CSS, Lucide React icons, and Redux Toolkit for state management.",
     "skills": ["Next.js", "Tailwind CSS", "Lucide React", "Redux Toolkit"],
     "source": "https://github.com/Ostap200488/ecommerce"
