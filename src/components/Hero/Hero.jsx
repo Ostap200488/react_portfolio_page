@@ -9,25 +9,35 @@ export const Hero = () => {
       <div className={styles.content}>
         <h1 className={styles.title}>Hi, I'm Ostap</h1>
 
-        <p className={styles.description}>
-          Hello! My name is <strong>Ostap Demchuk</strong>. I’m a{" "}
-          <strong>Junior Software Developer</strong> who enjoys building{" "}
-          <strong>full-stack applications</strong> and learning new technologies
-          every day.
-        </p>
+      <p className={styles.description}>
+  Hi! I'm <strong>Ostap Demchuk</strong>, a{" "}
+  <strong>Junior Software Developer</strong> passionate about building{" "}
+  <strong>real-world full-stack applications</strong> and solving meaningful problems.
+</p>
 
-        <p className={styles.description}>
-          I focus on creating <strong>fast</strong>,{" "}
-          <strong>responsive</strong>, and <strong>user-friendly</strong>{" "}
-          products using <strong>React</strong>, <strong>Node.js</strong>,{" "}
-          <strong>Express</strong>, and <strong>MongoDB</strong>.
-        </p>
+<p className={styles.description}>
+  I am a dedicated and versatile developer with a strong commitment to{" "}
+  <strong>continuous learning</strong> and self-improvement. I enjoy working in dynamic
+  environments where I can collaborate, grow, and turn ideas into functional products.
+</p>
 
-        <p className={styles.description}>
-          My goal is to join a team where I can contribute, learn from
-          experienced developers, and grow into a strong professional software
-          engineer.
-        </p>
+<p className={styles.description}>
+  I primarily work with <strong>React</strong>, <strong>Node.js</strong>,{" "}
+  <strong>Express</strong>, and <strong>MongoDB</strong>, focusing on building{" "}
+  <strong>fast</strong>, <strong>responsive</strong>, and{" "}
+  <strong>user-friendly</strong> applications.
+</p>
+
+<p className={styles.description}>
+  I’ve built projects such as real-time chat applications, POS systems, and AI-based tools,
+  which helped me develop strong problem-solving skills and a practical understanding of
+  modern web development.
+</p>
+
+<p className={styles.description}>
+  I am currently looking for an opportunity where I can contribute, gain real-world experience,
+  and grow into a confident and reliable software engineer.
+</p>
 
         <a
           href="mailto:ostap.04.0604.67@email.com"
