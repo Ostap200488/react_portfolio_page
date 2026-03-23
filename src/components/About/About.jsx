@@ -65,6 +65,7 @@ export const About = () => {
                 of Formula 1 and have a strong interest in history. Back in
                 Ukraine, I participated in history Olympiads and won trophies at
                 the national level.
+                
               </p>
             </div>
           </li>
