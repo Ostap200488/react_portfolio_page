@@ -10,33 +10,23 @@ export const Hero = () => {
         <h1 className={styles.title}>Hi, I'm Ostap</h1>
 
       <p className={styles.description}>
-  Hi! I'm <strong>Ostap Demchuk</strong>, a{" "}
-  <strong>Junior Software Developer</strong> passionate about building{" "}
-  <strong>real-world full-stack applications</strong> and solving meaningful problems.
+  Hi! I'm <strong>Ostap Demchuk</strong>, a motivated and driven individual who enjoys
+  taking on new challenges and constantly improving myself.
 </p>
 
 <p className={styles.description}>
-  I am a dedicated and versatile developer with a strong commitment to{" "}
-  <strong>continuous learning</strong> and self-improvement. I enjoy working in dynamic
-  environments where I can collaborate, grow, and turn ideas into functional products.
+  I am a hardworking and positive person with a strong sense of responsibility. I value
+  discipline, consistency, and always giving my best in everything I do.
 </p>
 
 <p className={styles.description}>
-  I primarily work with <strong>React</strong>, <strong>Node.js</strong>,{" "}
-  <strong>Express</strong>, and <strong>MongoDB</strong>, focusing on building{" "}
-  <strong>fast</strong>, <strong>responsive</strong>, and{" "}
-  <strong>user-friendly</strong> applications.
+  I enjoy working with people, learning from others, and growing in environments where I
+  can push my limits and develop both personally and professionally.
 </p>
 
 <p className={styles.description}>
-  I’ve built projects such as real-time chat applications, POS systems, and AI-based tools,
-  which helped me develop strong problem-solving skills and a practical understanding of
-  modern web development.
-</p>
-
-<p className={styles.description}>
-  I am currently looking for an opportunity where I can contribute, gain real-world experience,
-  and grow into a confident and reliable software engineer.
+  My goal is to become a reliable and skilled professional who can contribute to meaningful
+  projects and create real impact through my work.
 </p>
 
         <a
