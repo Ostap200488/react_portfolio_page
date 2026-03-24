@@ -1,3 +1,5 @@
+@import "./vars.css";
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -7,4 +9,26 @@
 
 html {
   scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  overflow-x: hidden;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+}
+
+.App {
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--color-bg);
+  overflow-x: hidden;
 }

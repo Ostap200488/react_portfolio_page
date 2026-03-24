@@ -1,11 +1,17 @@
 :root {
-  /* Colours */
-  --color-text: #fff;
+  --color-text: #ffffff;
   --color-primary: #576cbc;
   --color-secondary: #19376d;
   --color-dark: #0b2447;
   --color-bg: #04152d;
 
-  /* Fonts */
-  --font-roboto: "Roboto";
+  --font-roboto: "Roboto", sans-serif;
+
+  --page-max-width: 1280px;
+  --page-padding: clamp(16px, 4vw, 48px);
+  --section-gap: clamp(70px, 10vw, 120px);
+
+  --radius-lg: 24px;
+  --radius-md: 18px;
+  --radius-sm: 12px;
 }

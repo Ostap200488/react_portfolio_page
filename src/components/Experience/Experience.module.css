@@ -1,120 +1,218 @@
 @import "../../vars.css";
 
 .container {
+  width: min(100%, 1280px);
+  margin: var(--section-gap) auto 0;
+  padding-left: var(--page-padding);
+  padding-right: var(--page-padding);
   color: var(--color-text);
-  margin-top: 79px;
-  margin-left: 10%;
-  margin-right: 10%;
+}
+
+.sectionHeader {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.sectionLabel {
+  display: inline-block;
+  margin-bottom: 10px;
+  font-size: clamp(12px, 1vw, 14px);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  opacity: 0.7;
 }
 
 .title {
-  color: var(--color-text);
-  font-size: 35px;
-  font-weight: 700;
-  letter-spacing: 1.75px;
-  text-transform: uppercase;
+  font-size: clamp(28px, 4vw, 42px);
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: 0.5px;
 }
 
 .content {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  margin-top: 14px;
+  display: grid;
+  grid-template-columns: minmax(280px, 0.95fr) minmax(320px, 1.25fr);
+  gap: clamp(20px, 3vw, 32px);
+  align-items: start;
 }
 
-.skills {
-  width: 45%;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 37px;
-}
-
-.skill {
+.leftColumn,
+.rightColumn {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 11px;
+  gap: 24px;
 }
 
-.skillImageContainer {
-  background-color: var(--color-secondary);
-  border-radius: 100%;
+.card {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 24px;
+  padding: clamp(18px, 2.5vw, 30px);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.16);
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(255, 255, 255, 0.14);
+}
+
+.cardTitle {
+  font-size: clamp(20px, 2vw, 24px);
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.educationItem {
+  margin-bottom: 22px;
+}
+
+.educationItem:last-child {
+  margin-bottom: 0;
+}
+
+.educationItem h4,
+.roleTitle,
+.skillCategory h4 {
+  font-size: clamp(16px, 1.5vw, 19px);
+  font-weight: 600;
+}
+
+.educationItem p,
+.description,
+.skillText,
+.certificateList li,
+.experienceList li {
+  font-size: clamp(14px, 1.2vw, 15px);
+  line-height: 1.7;
+}
+
+.educationItem p {
+  opacity: 0.85;
+  margin-top: 6px;
+}
+
+.certificateList,
+.experienceList {
+  padding-left: 20px;
+}
+
+.certificateList li,
+.experienceList li {
+  margin-bottom: 8px;
+}
+
+.skillsWrapper {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 120px;
-  height: 120px;
+  flex-direction: column;
+  gap: 16px;
 }
 
-.skillImageContainer img {
-  width: 75px;
+.skillCategory {
+  padding: clamp(14px, 2vw, 18px);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.025);
+  border: 1px solid rgba(255, 255, 255, 0.06);
 }
 
-.skill p {
-  font-size: 25px;
-  font-family: var(--font-roboto);
-  font-weight: 500;
+.skillText {
+  margin-top: 8px;
+  opacity: 0.92;
+}
+
+.learningText {
+  margin-top: 8px;
+  line-height: 1.6;
+  font-size: 13px;
+  opacity: 0.8;
+}
+
+.learningText span {
+  font-weight: 600;
+  opacity: 1;
 }
 
 .history {
-  width: 45%;
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .historyItem {
+  margin-bottom: 24px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.historyItem:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.historyHeader {
+  margin-bottom: 10px;
+}
+
+.roleTitle {
+  margin-bottom: 4px;
+}
+
+.date {
+  font-size: 13px;
+  opacity: 0.72;
+}
+
+.description {
+  margin: 12px 0;
+  opacity: 0.9;
+}
+
+.techStack,
+.tagGroup {
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 17px;
-  background: #19376d;
-  background: linear-gradient(90deg, #19376d 0%, rgba(25, 55, 109, 0) 100%);
-  border-radius: 10px;
-  padding: 24px;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
 }
 
-.historyItem img {
-  width: 50px;
+.techTag,
+.extraTag {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 7px 12px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  font-size: clamp(12px, 1vw, 14px);
 }
 
-.historyItemDetails {
-  font-family: var(--font-roboto);
-}
-
-.historyItemDetails h3 {
-  font-size: 30px;
-  font-weight: 500;
-}
-
-.historyItemDetails p {
-  font-size: 20px;
-  font-weight: 300;
-}
-
-.historyItemDetails ul {
-  margin-top: 6px;
-  list-style-position: inside;
-  font-size: 25px;
-  list-style-type: disc;
-  margin-left: 17px;
-}
-
-@media screen and (max-width: 830px) {
+@media screen and (max-width: 1000px) {
   .content {
-    flex-direction: column;
-    align-items: center;
-    gap: 34px;
+    grid-template-columns: 1fr;
   }
 
-  .skills {
-    width: 100%;
-    flex-direction: row;
-    justify-content: center;
+  .sectionHeader {
+    margin-bottom: 34px;
   }
 
-  .history {
-    width: 100%;
-    gap: 9px;
+  .card {
+    padding: 22px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .card {
+    padding: 18px;
+    border-radius: 18px;
+  }
+
+  .techTag,
+  .extraTag {
+    padding: 6px 10px;
   }
 }

@@ -2,28 +2,29 @@
 
 .container {
   position: relative;
+  width: min(100%, var(--page-max-width));
+  margin: 40px auto 0;
+  padding: 0 var(--page-padding);
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 32px; /* reduced */
+  gap: 40px;
   z-index: 1;
-  margin-left: 10%;
-  margin-right: 10%;
 }
 
 .content {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  gap: 16px;
   color: var(--color-text);
-  z-index: 1;
-  gap: 16px; /* adds controlled spacing instead of big margins */
+  flex: 1;
 }
 
 .title {
-  font-size: 44px; /* smaller */
+  font-size: clamp(2.2rem, 5vw, 4.5rem);
   font-weight: 900;
-  margin-bottom: 12px; /* reduced */
+  line-height: 1.1;
   font-family: var(--font-roboto);
   background: linear-gradient(
     90deg,
@@ -36,34 +37,74 @@
 }
 
 .description {
-  font-size: 17px; /* smaller */
-  line-height: 1.5;
-  font-family: var(--font-roboto);
-  margin-bottom: 20px; /* reduced */
-  max-width: 500px; /* keeps text tighter */
+  max-width: 620px;
+  font-size: clamp(1rem, 2vw, 1.15rem);
+  line-height: 1.7;
+  opacity: 0.92;
 }
 
 .contactBtn {
   text-decoration: none;
   background-color: var(--color-primary);
   color: var(--color-text);
-  border-radius: 100px;
-  font-size: 17px; /* smaller */
+  border-radius: 999px;
+  font-size: 16px;
   font-weight: 600;
-  padding: 14px 22px; /* slightly reduced */
-  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
+  padding: 14px 24px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.contactBtn:hover {
+  transform: translateY(-2px);
+  opacity: 0.95;
 }
 
 .heroImg {
-  width: 45%; /* slightly smaller */
-  max-width: 480px;
+  width: min(42vw, 460px);
   height: auto;
-  display: block;
   object-fit: contain;
-  z-index: 1;
+  flex-shrink: 0;
+  animation: floating 3s ease-in-out infinite;
+}
 
-  animation-name: floating;
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
+@keyframes floating {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .container {
+    flex-direction: column-reverse;
+    text-align: center;
+    gap: 28px;
+    margin-top: 20px;
+  }
+
+  .content {
+    align-items: center;
+  }
+
+  .description {
+    max-width: 100%;
+  }
+
+  .heroImg {
+    width: min(70vw, 340px);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .contactBtn {
+    width: 100%;
+    max-width: 240px;
+    text-align: center;
+  }
 }
