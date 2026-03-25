@@ -1,34 +1,52 @@
 @import "./vars.css";
 
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: "Outfit", Arial, Helvetica, sans-serif;
 }
 
 html {
   scroll-behavior: smooth;
 }
 
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   background-color: var(--color-bg);
   color: var(--color-text);
   overflow-x: hidden;
+  font-family: "Outfit", Arial, Helvetica, sans-serif;
+  line-height: 1.5;
 }
 
 img {
   display: block;
   max-width: 100%;
+  height: auto;
 }
 
 a {
   color: inherit;
 }
 
-.App {
-  width: 100%;
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+#root {
   min-height: 100vh;
-  background-color: var(--color-bg);
-  overflow-x: hidden;
 }

@@ -1,10 +1,9 @@
 @import "../../vars.css";
 
 .container {
-  width: min(100%, 1280px);
+  width: min(100%, var(--page-max-width));
   margin: var(--section-gap) auto 0;
-  padding-left: var(--page-padding);
-  padding-right: var(--page-padding);
+  padding: 0 var(--page-padding);
   color: var(--color-text);
 }
 
@@ -41,6 +40,7 @@
   display: flex;
   flex-direction: column;
   gap: 24px;
+  min-width: 0;
 }
 
 .card {
@@ -201,11 +201,6 @@
 }
 
 @media screen and (max-width: 600px) {
-  .container {
-    padding-left: 5%;
-    padding-right: 5%;
-  }
-
   .card {
     padding: 18px;
     border-radius: 18px;

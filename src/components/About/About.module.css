@@ -2,12 +2,9 @@
 
 .container {
   position: relative;
-  width: min(100%, 1100px);
+  width: min(100%, var(--page-max-width));
   margin: var(--section-gap) auto 0;
-  padding: clamp(24px, 4vw, 60px);
-  border-radius: 20px;
-  background: rgba(12, 12, 12, 0.6);
-  backdrop-filter: blur(10px);
+  padding: 0 var(--page-padding);
   z-index: 1;
 }
 
@@ -22,9 +19,11 @@
 }
 
 .content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 100%;
+  padding: clamp(24px, 4vw, 60px);
+  border-radius: 20px;
+  background: rgba(12, 12, 12, 0.6);
+  backdrop-filter: blur(10px);
 }
 
 .aboutItems {
@@ -36,7 +35,6 @@
   flex-direction: column;
   gap: 18px;
   list-style: none;
-  padding: 0;
 }
 
 .aboutItem {
@@ -56,14 +54,6 @@
   border-color: rgba(165, 215, 232, 0.35);
 }
 
-.aboutItem img {
-  width: 40px;
-  height: 40px;
-  object-fit: contain;
-  flex-shrink: 0;
-  margin-top: 2px;
-}
-
 .aboutItemText h3 {
   font-size: clamp(17px, 2vw, 20px);
   font-weight: 700;
@@ -72,28 +62,23 @@
 
 .aboutItemText p {
   font-size: clamp(14px, 1.3vw, 15px);
-  line-height: 1.65;
+  line-height: 1.72;
   opacity: 0.92;
 }
 
 @media screen and (max-width: 830px) {
-  .container {
+  .content {
     padding: 32px 18px;
   }
 
   .aboutItem {
     padding: 18px 16px;
   }
-
-  .aboutItem img {
-    width: 34px;
-    height: 34px;
-  }
 }
 
 @media screen and (max-width: 520px) {
-  .container {
-    width: calc(100% - 20px);
+  .title {
+    margin-bottom: 22px;
   }
 
   .aboutItem {

@@ -9,7 +9,7 @@
 
   --page-max-width: 1280px;
   --page-padding: clamp(16px, 4vw, 48px);
-  --section-gap: clamp(70px, 10vw, 120px);
+  --section-gap: clamp(56px, 8vw, 120px);
 
   --radius-lg: 24px;
   --radius-md: 18px;

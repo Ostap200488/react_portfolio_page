@@ -1,26 +1,24 @@
 @import "../../vars.css";
 
 .container {
-  margin-top: 76px;
+  width: min(100%, var(--page-max-width));
+  margin: var(--section-gap) auto 0;
+  padding: 0 var(--page-padding);
   color: var(--color-text);
-  margin-left: 10%;
-  margin-right: 10%;
 }
 
 .title {
-  font-size: 35px;
+  font-size: clamp(28px, 4vw, 35px);
   font-weight: 700;
-  letter-spacing: 1.75px;
+  letter-spacing: 1.4px;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .projects {
-  margin-top: 37px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  gap: 15px;
-  width: 100%;
+  margin-top: 32px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: clamp(16px, 2vw, 24px);
+  align-items: stretch;
 }
