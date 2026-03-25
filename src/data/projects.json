@@ -1,7 +1,7 @@
 [
   {
     "title": "ChatApp",
-    "description": "This is a project made to learn the latest languages by building an app.",
+    "description": "A full-stack real-time chat application with user authentication, responsive design, and instant messaging features.",
     "skills": ["React", "Express", "Node", "Vite", "JavaScript", "Tailwind CSS", "MongoDB"],
     "source": "https://github.com/Ostap200488/ChatApp"
   },
@@ -25,8 +25,26 @@
   },
   {
     "title": "E-Commerce",
-    "description": "AI-powered customer support chatbot built with Next.js, Tailwind CSS, Lucide React icons, and Redux Toolkit for state management.",
+    "description": "An AI-powered customer support chatbot built with Next.js, Tailwind CSS, Lucide React, and Redux Toolkit for state management.",
     "skills": ["Next.js", "Tailwind CSS", "Lucide React", "Redux Toolkit"],
     "source": "https://github.com/Ostap200488/ecommerce"
+  },
+  {
+    "title": "Medical ChatBot",
+    "description": "An AI-powered medical chatbot that uses LangChain, Pinecone, Flask, and OpenAI to answer medical-related questions using vector search and LLM responses.",
+    "skills": ["Python", "Flask", "LangChain", "Pinecone", "OpenAI", "LLM", "Vector Database"],
+    "source": "https://github.com/Ostap200488/MedicalChatBot-"
+  },
+  {
+    "title": "Customer Support ChatBot",
+    "description": "An AI-powered customer support chatbot built using LangChain and OpenAI that provides context-aware answers through retrieval-based search and LLM responses.",
+    "skills": ["Python", "LangChain", "OpenAI", "LLM", "Vector Search", "Flask"],
+    "source": "https://github.com/Ostap200488/CustomerSupportChatBot"
+  },
+  {
+    "title": "Docker QAP Deployment",
+    "description": "A containerized application using Docker, demonstrating environment setup, dependency management, and application deployment through Docker containers.",
+    "skills": ["Docker", "Containerization", "DevOps", "Environment Management"],
+    "source": "https://github.com/Ostap200488/Docker-QAP"
   }
 ]
