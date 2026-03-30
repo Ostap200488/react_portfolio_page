@@ -7,13 +7,17 @@ export const ProjectCard = ({
   const getProjectImage = (title) => {
     switch (title) {
       case "ChatApp":
-        return "assets/projects/chatapp.png";
+        return "/assets/projects/chatapp.png";
       case "POS":
-        return "assets/projects/pos.png";
+        return "/assets/projects/pos.png";
       case "E-Commerce":
-        return "assets/projects/ecommerce.png";
+        return "/assets/projects/ecommerce.png";
       case "Medical ChatBot":
-        return "assets/projects/medchat.png";
+        return "/assets/projects/medchat.png";
+      case "React Todo List":
+        return "/assets/projects/todo.png";
+      case "Library Management System":
+        return "/assets/projects/lib.png";
       default:
         return null;
     }

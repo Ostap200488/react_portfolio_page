@@ -35,16 +35,16 @@
     "skills": ["Python", "Flask", "LangChain", "Pinecone", "OpenAI", "LLM", "Vector Database"],
     "source": "https://github.com/Ostap200488/MedicalChatBot-"
   },
+{
+  "title": "React Todo List",
+  "description": "A simple and clean to-do list application built with React.",
+  "skills": ["React", "JavaScript", "CSS"],
+  "source": "assets/projects/todo.png"
+},
   {
-    "title": "Customer Support ChatBot",
-    "description": "An AI-powered customer support chatbot built using LangChain and OpenAI that provides context-aware answers through retrieval-based search and LLM responses.",
-    "skills": ["Python", "LangChain", "OpenAI", "LLM", "Vector Search", "Flask"],
-    "source": "https://github.com/Ostap200488/CustomerSupportChatBot"
-  },
-  {
-    "title": "Docker QAP Deployment",
-    "description": "A containerized application using Docker, demonstrating environment setup, dependency management, and application deployment through Docker containers.",
-    "skills": ["Docker", "Containerization", "DevOps", "Environment Management"],
-    "source": "https://github.com/Ostap200488/Docker-QAP"
+  "title": "Library Management System",
+  "description": "A Java-based library management system with book handling, borrowing logic, validation, and unit testing.",
+  "skills": ["Java", "Maven", "JUnit", "OOP"],
+  "source": "https://github.com/Ostap200488/Library-Managment-System-"
   }
 ]
