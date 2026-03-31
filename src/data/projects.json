@@ -39,7 +39,7 @@
   "title": "React Todo List",
   "description": "A simple and clean to-do list application built with React.",
   "skills": ["React", "JavaScript", "CSS"],
-  "source": "assets/projects/todo.png"
+  "source": "https://github.com/Ostap200488/Todo-List"
 },
   {
   "title": "Library Management System",

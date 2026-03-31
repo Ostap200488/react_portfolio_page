@@ -1,0 +1,54 @@
+{
+  "navbar": {
+    "about": "À propos",
+    "experience": "Expérience",
+    "projects": "Projets",
+    "contact": "Contact"
+  },
+  "language": {
+    "english": "EN",
+    "french": "FR"
+  },
+  "hero": {
+    "title": "Bonjour, je m'appelle Ostap",
+    "description1": "Bonjour ! Je suis Ostap Demchuk, une personne motivée et ambitieuse qui aime relever de nouveaux défis et s'améliorer constamment.",
+    "description2": "Je suis une personne travailleuse et positive avec un grand sens des responsabilités. J'accorde de l'importance à la discipline, à la constance et au fait de toujours donner le meilleur de moi-même.",
+    "description3": "J'aime travailler avec les autres, apprendre d'eux et évoluer dans des environnements où je peux repousser mes limites et me développer personnellement et professionnellement.",
+    "description4": "Mon objectif est de devenir un professionnel fiable et compétent capable de contribuer à des projets significatifs et d'avoir un réel impact grâce à mon travail.",
+    "contactBtn": "Me contacter"
+  },
+  "contact": {
+    "label": "Entrer en contact",
+    "title": "Contact",
+    "description": "N'hésitez pas à me contacter pour des opportunités, une collaboration ou simplement pour échanger."
+  },
+  "projects": {
+    "title": "Projets",
+    "demo": "Démo",
+    "source": "Code source",
+    "chatappDesc": "Une application de messagerie en temps réel full-stack avec authentification utilisateur, design responsive et messagerie instantanée.",
+    "posDesc": "Une application web POS full-stack avec authentification, gestion des commandes et intégration de paiement Stripe.",
+    "ecommerceDesc": "Un chatbot de support client alimenté par l'IA, construit avec Next.js, Tailwind CSS, Lucide React et Redux Toolkit.",
+    "medicalDesc": "Un chatbot médical alimenté par l'IA utilisant LangChain, Pinecone, Flask et OpenAI pour répondre à des questions médicales grâce à la recherche vectorielle et aux réponses LLM.",
+    "todoDesc": "Une application de liste de tâches simple et propre construite avec React.",
+    "libraryDesc": "Un système de gestion de bibliothèque basé sur Java avec gestion des livres, logique d'emprunt, validation et tests unitaires."
+  },
+  "experience": {
+    "label": "Qualifications",
+    "title": "Expérience, formation et compétences",
+    "education": "Formation",
+    "diploma": "Diplôme en développement logiciel",
+    "certificates": "Certificats",
+    "technicalSkills": "Compétences techniques",
+    "workExperience": "Expérience",
+    "languages": "Langues",
+    "currentlyLearning": "En cours d'apprentissage",
+    "skillCategory1": "Langages de programmation et frameworks",
+    "skillCategory2": "Méthodologies et principes",
+    "skillCategory3": "Outils et technologies",
+    "language1": "Anglais (courant)",
+    "language2": "Ukrainien (langue maternelle)",
+    "language3": "Polonais (courant)",
+    "language4": "Français (en apprentissage)"
+  }
+}

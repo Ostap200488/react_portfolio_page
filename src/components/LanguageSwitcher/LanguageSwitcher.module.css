@@ -1,0 +1,26 @@
+.switcher {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.btn {
+  padding: 8px 14px;
+  border: 1px solid #888;
+  border-radius: 8px;
+  background: transparent;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+}
+
+.active {
+  background: white;
+  color: black;
+  border-color: white;
+}

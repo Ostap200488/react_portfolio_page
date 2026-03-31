@@ -1,9 +1,12 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import styles from "./ProjectCard.module.css";
 
 export const ProjectCard = ({
   project: { title, description, skills, demo, source },
 }) => {
+  const { t, i18n } = useTranslation();
+
   const getProjectImage = (title) => {
     switch (title) {
       case "ChatApp":
@@ -23,6 +26,28 @@ export const ProjectCard = ({
     }
   };
 
+  const getTranslatedDescription = (title, fallback) => {
+    if (i18n.language === "fr") {
+      switch (title) {
+        case "ChatApp":
+          return t("projects.chatappDesc");
+        case "POS":
+          return t("projects.posDesc");
+        case "E-Commerce":
+          return t("projects.ecommerceDesc");
+        case "Medical ChatBot":
+          return t("projects.medicalDesc");
+        case "React Todo List":
+          return t("projects.todoDesc");
+        case "Library Management System":
+          return t("projects.libraryDesc");
+        default:
+          return fallback;
+      }
+    }
+    return fallback;
+  };
+
   const image = getProjectImage(title);
 
   return (
@@ -37,7 +62,9 @@ export const ProjectCard = ({
         />
       )}
 
-      <p className={styles.description}>{description}</p>
+      <p className={styles.description}>
+        {getTranslatedDescription(title, description)}
+      </p>
 
       <ul className={styles.skills}>
         {skills.map((skill, id) => (
@@ -55,7 +82,7 @@ export const ProjectCard = ({
             target="_blank"
             rel="noopener noreferrer"
           >
-            Demo
+            {t("projects.demo")}
           </a>
         )}
 
@@ -65,7 +92,7 @@ export const ProjectCard = ({
           target="_blank"
           rel="noopener noreferrer"
         >
-          Source
+          {t("projects.source")}
         </a>
       </div>
     </div>

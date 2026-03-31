@@ -1,16 +1,16 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import styles from "./Contact.module.css";
 
 export const Contact = () => {
+  const { t } = useTranslation();
+
   return (
     <footer id="contact" className={styles.container}>
       <div className={styles.text}>
-        <span className={styles.label}>Get in Touch</span>
-        <h2>Contact</h2>
-        <p>
-          Feel free to reach out for opportunities, collaboration, or just to
-          connect.
-        </p>
+        <span className={styles.label}>{t("contact.label")}</span>
+        <h2>{t("contact.title")}</h2>
+        <p>{t("contact.description")}</p>
       </div>
 
       <ul className={styles.links}>

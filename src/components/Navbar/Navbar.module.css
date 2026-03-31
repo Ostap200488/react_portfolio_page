@@ -101,3 +101,25 @@
     padding: 16px;
   }
 }
+/* Language switcher inside mobile menu */
+.langItem {
+  margin-top: 10px;
+}
+
+/* Desktop position */
+.langDesktop {
+  margin-left: 20px;
+}
+
+/* Optional: hide/show depending on screen */
+@media (max-width: 768px) {
+  .langDesktop {
+    display: none;
+  }
+}
+
+@media (min-width: 769px) {
+  .langItem {
+    display: none;
+  }
+}

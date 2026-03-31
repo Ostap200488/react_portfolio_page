@@ -1,0 +1,54 @@
+{
+  "navbar": {
+    "about": "About",
+    "experience": "Experience",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "language": {
+    "english": "EN",
+    "french": "FR"
+  },
+  "hero": {
+    "title": "Hi, I'm Ostap",
+    "description1": "Hi! I'm Ostap Demchuk, a motivated and driven individual who enjoys taking on new challenges and constantly improving myself.",
+    "description2": "I am a hardworking and positive person with a strong sense of responsibility. I value discipline, consistency, and always giving my best in everything I do.",
+    "description3": "I enjoy working with people, learning from others, and growing in environments where I can push my limits and develop both personally and professionally.",
+    "description4": "My goal is to become a reliable and skilled professional who can contribute to meaningful projects and create real impact through my work.",
+    "contactBtn": "Contact Me"
+  },
+  "contact": {
+    "label": "Get in Touch",
+    "title": "Contact",
+    "description": "Feel free to reach out for opportunities, collaboration, or just to connect."
+  },
+  "projects": {
+    "title": "Projects",
+    "demo": "Demo",
+    "source": "Source",
+    "chatappDesc": "A full-stack real-time chat application with user authentication, responsive design, and instant messaging features.",
+    "posDesc": "A full-stack POS web app with authentication, order management, and Stripe payment integration.",
+    "ecommerceDesc": "An AI-powered customer support chatbot built with Next.js, Tailwind CSS, Lucide React, and Redux Toolkit for state management.",
+    "medicalDesc": "An AI-powered medical chatbot that uses LangChain, Pinecone, Flask, and OpenAI to answer medical-related questions using vector search and LLM responses.",
+    "todoDesc": "A simple and clean to-do list application built with React.",
+    "libraryDesc": "A Java-based library management system with book handling, borrowing logic, validation, and unit testing."
+  },
+  "experience": {
+    "label": "Qualifications",
+    "title": "Experience, Education & Skills",
+    "education": "Education",
+    "diploma": "Software Development Diploma",
+    "certificates": "Certificates",
+    "technicalSkills": "Technical Skills",
+    "workExperience": "Experience",
+    "languages": "Languages",
+    "currentlyLearning": "Currently learning",
+    "skillCategory1": "Programming Languages & Frameworks",
+    "skillCategory2": "Methodologies & Principles",
+    "skillCategory3": "Tools & Technologies",
+    "language1": "English (Fluent)",
+    "language2": "Ukrainian (Native)",
+    "language3": "Polish (Fluent)",
+    "language4": "French (Learning)"
+  }
+}

@@ -1,16 +1,19 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import styles from "./Experience.module.css";
 import history from "../../data/history.json";
 
 export const Experience = () => {
+  const { t } = useTranslation();
+
   const skillCategories = [
     {
-      title: "Programming Languages & Frameworks",
+      title: t("experience.skillCategory1"),
       skills: ["Python", "JavaScript", "React", "HTML", "CSS", "Git Bash"],
       learning: ["Java", "Node.js", "Express.js"],
     },
     {
-      title: "Methodologies & Principles",
+      title: t("experience.skillCategory2"),
       skills: [
         "RESTful APIs",
         "Object-Oriented Programming (OOP)",
@@ -23,17 +26,17 @@ export const Experience = () => {
       learning: ["LangChain", "LangGraph", "Continuous skill improvement"],
     },
     {
-      title: "Tools & Technologies",
+      title: t("experience.skillCategory3"),
       skills: ["AWS", "Git", "GitHub", "Docker", "Postman"],
       learning: ["MongoDB", "PostgreSQL"],
     },
   ];
 
   const languages = [
-    "English (Fluent)",
-    "Ukrainian (Native)",
-    "Polish (Fluent)",
-    "French (Learning)",
+    t("experience.language1"),
+    t("experience.language2"),
+    t("experience.language3"),
+    t("experience.language4"),
   ];
 
   const certificates = [
@@ -48,22 +51,22 @@ export const Experience = () => {
   return (
     <section className={styles.container} id="experience">
       <div className={styles.sectionHeader}>
-        <span className={styles.sectionLabel}>Qualifications</span>
-        <h2 className={styles.title}>Experience, Education & Skills</h2>
+        <span className={styles.sectionLabel}>{t("experience.label")}</span>
+        <h2 className={styles.title}>{t("experience.title")}</h2>
       </div>
 
       <div className={styles.content}>
         <div className={styles.leftColumn}>
           <article className={styles.card}>
-            <h3 className={styles.cardTitle}>Education</h3>
+            <h3 className={styles.cardTitle}>{t("experience.education")}</h3>
 
             <div className={styles.educationItem}>
-              <h4>Software Development Diploma</h4>
+              <h4>{t("experience.diploma")}</h4>
               <p>Keyin College | 2024 - 2025</p>
             </div>
 
             <div className={styles.educationItem}>
-              <h4>Certificates</h4>
+              <h4>{t("experience.certificates")}</h4>
               <ul className={styles.certificateList}>
                 {certificates.map((certificate, index) => (
                   <li key={index}>{certificate}</li>
@@ -73,7 +76,7 @@ export const Experience = () => {
           </article>
 
           <article className={styles.card}>
-            <h3 className={styles.cardTitle}>Technical Skills</h3>
+            <h3 className={styles.cardTitle}>{t("experience.technicalSkills")}</h3>
 
             <div className={styles.skillsWrapper}>
               {skillCategories.map((category, index) => (
@@ -85,7 +88,8 @@ export const Experience = () => {
                   </p>
 
                   <p className={styles.learningText}>
-                    <span>Currently learning:</span> {category.learning.join(", ")}
+                    <span>{t("experience.currentlyLearning")}:</span>{" "}
+                    {category.learning.join(", ")}
                   </p>
                 </div>
               ))}
@@ -95,7 +99,7 @@ export const Experience = () => {
 
         <div className={styles.rightColumn}>
           <article className={styles.card}>
-            <h3 className={styles.cardTitle}>Experience</h3>
+            <h3 className={styles.cardTitle}>{t("experience.workExperience")}</h3>
 
             <ul className={styles.history}>
               {history.map((item, id) => (
@@ -136,7 +140,7 @@ export const Experience = () => {
           </article>
 
           <article className={styles.card}>
-            <h3 className={styles.cardTitle}>Languages</h3>
+            <h3 className={styles.cardTitle}>{t("experience.languages")}</h3>
 
             <div className={styles.tagGroup}>
               {languages.map((language, index) => (
