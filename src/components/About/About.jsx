@@ -7,25 +7,37 @@ export const About = () => {
 
   return (
     <section id="about" className={styles.container}>
-      <div className={styles.sectionHeader}>
-        <span className={styles.sectionLabel}>{t("about.label")}</span>
-        <h2 className={styles.title}>{t("about.title")}</h2>
-      </div>
-
-      <div className={styles.content}>
-        <div className={styles.block}>
-          <h3>{t("about.backgroundTitle")}</h3>
-          <p>{t("about.backgroundText")}</p>
+      <div className={styles.inner}>
+        <div className={styles.sectionHeader}>
+          <span className={styles.sectionLabel}>{t("about.label")}</span>
+          <h2 className={styles.title}>{t("about.title")}</h2>
+          <p className={styles.subtitle}>{t("about.intro")}</p>
         </div>
 
-        <div className={styles.block}>
-          <h3>{t("about.valuesTitle")}</h3>
-          <p>{t("about.valuesText")}</p>
-        </div>
+        <div className={styles.grid}>
+          <article className={styles.card}>
+            <div className={styles.cardTop}>
+              <span className={styles.cardNumber}>01</span>
+              <h3 className={styles.cardTitle}>{t("about.backgroundTitle")}</h3>
+            </div>
+            <p className={styles.cardText}>{t("about.backgroundText")}</p>
+          </article>
 
-        <div className={styles.block}>
-          <h3>{t("about.hobbiesTitle")}</h3>
-          <p>{t("about.hobbiesText")}</p>
+          <article className={styles.card}>
+            <div className={styles.cardTop}>
+              <span className={styles.cardNumber}>02</span>
+              <h3 className={styles.cardTitle}>{t("about.valuesTitle")}</h3>
+            </div>
+            <p className={styles.cardText}>{t("about.valuesText")}</p>
+          </article>
+
+          <article className={`${styles.card} ${styles.fullWidth}`}>
+            <div className={styles.cardTop}>
+              <span className={styles.cardNumber}>03</span>
+              <h3 className={styles.cardTitle}>{t("about.hobbiesTitle")}</h3>
+            </div>
+            <p className={styles.cardText}>{t("about.hobbiesText")}</p>
+          </article>
         </div>
       </div>
     </section>

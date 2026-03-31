@@ -2,86 +2,161 @@
 
 .container {
   position: relative;
-  width: min(100%, var(--page-max-width));
-  margin: var(--section-gap) auto 0;
-  padding: 0 var(--page-padding);
+  width: 100%;
+  margin-top: 120px;
+  padding: 0 24px;
   z-index: 1;
+}
+
+.inner {
+  width: min(1200px, 100%);
+  margin: 0 auto;
+  padding: 48px 32px;
+  border-radius: 28px;
+  background: rgba(12, 12, 12, 0.58);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
+}
+
+.sectionHeader {
+  max-width: 800px;
+  margin-bottom: 36px;
+}
+
+.sectionLabel {
+  display: inline-block;
+  margin-bottom: 12px;
+  color: #9ca3af;
+  font-size: clamp(12px, 1.4vw, 14px);
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
 .title {
   color: var(--color-text);
-  font-size: clamp(28px, 4vw, 34px);
+  font-size: clamp(30px, 5vw, 48px);
   font-weight: 800;
-  letter-spacing: 1.4px;
-  text-transform: uppercase;
-  margin-bottom: 28px;
-  text-align: center;
+  line-height: 1.1;
+  margin: 0 0 14px 0;
 }
 
-.content {
-  width: 100%;
-  padding: clamp(24px, 4vw, 60px);
-  border-radius: 20px;
-  background: rgba(12, 12, 12, 0.6);
-  backdrop-filter: blur(10px);
+.subtitle {
+  color: rgba(255, 255, 255, 0.72);
+  font-size: clamp(15px, 2vw, 18px);
+  line-height: 1.7;
+  margin: 0;
+  max-width: 720px;
 }
 
-.aboutItems {
-  width: 100%;
-  max-width: 860px;
-  margin: 0 auto;
-  color: var(--color-text);
-  display: flex;
-  flex-direction: column;
-  gap: 18px;
-  list-style: none;
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
 }
 
-.aboutItem {
-  display: flex;
-  gap: 16px;
-  align-items: flex-start;
-  padding: clamp(16px, 2vw, 22px);
-  border-radius: 16px;
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.06);
-  transition: transform 0.25s ease, background 0.25s ease, border 0.25s ease;
+.card {
+  padding: 28px 24px;
+  border-radius: 22px;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.06) 0%,
+    rgba(255, 255, 255, 0.03) 100%
+  );
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: transform 0.25s ease, border-color 0.25s ease,
+    box-shadow 0.25s ease;
 }
 
-.aboutItem:hover {
+.card:hover {
   transform: translateY(-4px);
-  background: rgba(165, 215, 232, 0.09);
-  border-color: rgba(165, 215, 232, 0.35);
+  border-color: rgba(255, 255, 255, 0.16);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.2);
 }
 
-.aboutItemText h3 {
-  font-size: clamp(17px, 2vw, 20px);
+.fullWidth {
+  grid-column: 1 / -1;
+}
+
+.cardTop {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 18px;
+}
+
+.cardNumber {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 42px;
+  height: 42px;
+  padding: 0 12px;
+  border-radius: 999px;
+  background: rgba(138, 75, 255, 0.16);
+  color: #c7a6ff;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.cardTitle {
+  color: var(--color-text);
+  font-size: clamp(20px, 2.5vw, 26px);
   font-weight: 700;
-  margin-bottom: 6px;
+  line-height: 1.2;
+  margin: 0;
 }
 
-.aboutItemText p {
-  font-size: clamp(14px, 1.3vw, 15px);
-  line-height: 1.72;
-  opacity: 0.92;
+.cardText {
+  color: rgba(255, 255, 255, 0.78);
+  font-size: clamp(15px, 1.7vw, 17px);
+  line-height: 1.9;
+  margin: 0;
 }
 
-@media screen and (max-width: 830px) {
-  .content {
-    padding: 32px 18px;
+@media screen and (max-width: 900px) {
+  .inner {
+    padding: 36px 22px;
   }
 
-  .aboutItem {
-    padding: 18px 16px;
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .fullWidth {
+    grid-column: auto;
   }
 }
 
-@media screen and (max-width: 520px) {
-  .title {
-    margin-bottom: 22px;
+@media screen and (max-width: 600px) {
+  .container {
+    margin-top: 90px;
+    padding: 0 16px;
   }
 
-  .aboutItem {
-    gap: 12px;
+  .inner {
+    padding: 28px 18px;
+    border-radius: 22px;
+  }
+
+  .sectionHeader {
+    margin-bottom: 26px;
+  }
+
+  .card {
+    padding: 22px 18px;
+    border-radius: 18px;
+  }
+
+  .cardTop {
+    align-items: flex-start;
+  }
+
+  .cardNumber {
+    min-width: 38px;
+    height: 38px;
+    font-size: 13px;
   }
 }
