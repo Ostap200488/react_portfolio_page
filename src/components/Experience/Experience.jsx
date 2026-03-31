@@ -9,26 +9,18 @@ export const Experience = () => {
   const skillCategories = [
     {
       title: t("experience.skillCategory1"),
-      skills: ["Python", "JavaScript", "React", "HTML", "CSS", "Git Bash"],
-      learning: ["Java", "Node.js", "Express.js"],
+      skills: t("experience.skillCategory1Skills"),
+      learning: t("experience.skillCategory1Learning"),
     },
     {
       title: t("experience.skillCategory2"),
-      skills: [
-        "RESTful APIs",
-        "Object-Oriented Programming (OOP)",
-        "Test-Driven Development (TDD)",
-        "Database Design",
-        "Agile",
-        "Scrum",
-        "Waterfall",
-      ],
-      learning: ["LangChain", "LangGraph", "Continuous skill improvement"],
+      skills: t("experience.skillCategory2Skills"),
+      learning: t("experience.skillCategory2Learning"),
     },
     {
       title: t("experience.skillCategory3"),
-      skills: ["AWS", "Git", "GitHub", "Docker", "Postman"],
-      learning: ["MongoDB", "PostgreSQL"],
+      skills: t("experience.skillCategory3Skills"),
+      learning: t("experience.skillCategory3Learning"),
     },
   ];
 
@@ -40,12 +32,12 @@ export const Experience = () => {
   ];
 
   const certificates = [
-    "AWS Academy Graduate - AWS Cloud Foundations",
-    "AWS Academy Cloud Architecting",
-    "Google IT Support Professional Certificate",
-    "Google Cybersecurity Certificate",
-    "Coding for Success by ANC",
-    "Advanced Coding for Success by ANC",
+    t("experience.certificate1"),
+    t("experience.certificate2"),
+    t("experience.certificate3"),
+    t("experience.certificate4"),
+    t("experience.certificate5"),
+    t("experience.certificate6"),
   ];
 
   return (
@@ -83,13 +75,10 @@ export const Experience = () => {
                 <div key={index} className={styles.skillCategory}>
                   <h4>{category.title}</h4>
 
-                  <p className={styles.skillText}>
-                    {category.skills.join(", ")}
-                  </p>
+                  <p className={styles.skillText}>{category.skills}</p>
 
                   <p className={styles.learningText}>
-                    <span>{t("experience.currentlyLearning")}:</span>{" "}
-                    {category.learning.join(", ")}
+                    <span>{t("experience.currentlyLearning")}:</span> {category.learning}
                   </p>
                 </div>
               ))}

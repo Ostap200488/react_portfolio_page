@@ -10,6 +10,7 @@ export const Projects = () => {
   return (
     <section className={styles.container} id="projects">
       <h2 className={styles.title}>{t("projects.title")}</h2>
+
       <div className={styles.projects}>
         {projects.map((project, id) => (
           <ProjectCard key={id} project={project} />

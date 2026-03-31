@@ -22,9 +22,6 @@ export const Hero = () => {
           {t("hero.contactBtn")}
         </a>
       </div>
-
-      <div className={styles.topBlur} />
-      <div className={styles.bottomBlur} />
     </section>
   );
 };
