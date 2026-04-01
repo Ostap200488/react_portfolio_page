@@ -1,13 +1,16 @@
 {
-  "about": {
+ "about": {
     "label": "About Me",
     "title": "About Me",
+
     "backgroundTitle": "Background",
-    "backgroundText": "My name is Ostap, and I am originally from Ukraine. Three years ago, I moved to Mount Pearl, Canada. Before that, I lived in Poland from 2019 to 2022. I am a friendly and outgoing person who enjoys meeting new people, learning continuously, and improving myself. I am easygoing, open to new opportunities, and always ready to take on new challenges. I have a strong competitive spirit that motivates me to push my limits and achieve both personal and professional goals. I am hardworking and always looking for ways to improve my skills and grow as a person. I am also passionate and creative, always seeking new ways to express myself and bring ideas to life.",
-    "valuesTitle": "Personal Values",
-    "valuesText": "I am a hardworking and dedicated person who always strives to complete tasks to the highest standard. I consistently deliver high-quality work and take pride in doing my best in everything I do. I am creative, curious, and open-minded, with a strong desire to continuously learn and grow. I enjoy exploring new ideas and improving my skills. I am also a friendly and approachable person who values building positive relationships with colleagues and clients. My supportive and caring nature allows me to contribute to a positive team environment and help others whenever possible. Honesty and humility are at the core of my character, guiding my decisions and helping me build strong and trustworthy relationships. I believe that versatility and continuous learning are key to personal and professional growth.",
+    "backgroundText": "My name is Ostap, and I am a Junior Software Developer originally from Ukraine, currently based in Canada. Three years ago, I moved to Mount Pearl after living in Poland from 2019 to 2022, where I completed my high school education. Living in different countries has helped me become adaptable, open-minded, and confident in new environments. I am a friendly and outgoing person who enjoys meeting new people, learning continuously, and improving myself. I am always open to new opportunities and challenges, and I have a strong competitive mindset that motivates me to push my limits and grow both personally and professionally. I am passionate about technology and creativity, always looking for new ways to express ideas and turn them into real solutions.",
+
+   "valuesTitle": "Personal Values",
+  "valuesText": "I am a dedicated and growth-oriented person who takes pride in delivering high-quality work. I approach every task with responsibility and attention to detail, always striving to achieve the best possible results. I am curious, open-minded, and committed to continuous learning, constantly exploring new technologies and improving my skills as a developer. I value teamwork and believe that strong communication and collaboration lead to better outcomes. I am approachable, reliable, and supportive, and I aim to contribute positively to any team environment. Honesty and humility guide my actions and help me build trust with others. I strongly believe that adaptability and lifelong learning are essential for long-term personal and professional success.",
+
     "hobbiesTitle": "Hobbies and Volunteering",
-    "hobbiesText": "In my free time, I enjoy participating in various events, such as hackathons. During my last hackathon, I worked in a group of three people and helped create a local event radar for the city where I currently live. I also participated in a local entrepreneurship hackathon, where I worked with five other team members to create a list of problems faced by newcomers and new businesses, along with possible solutions. I am also a big fan of Formula 1 and have a strong interest in history. Back in Ukraine, I participated in history Olympiads and won trophies at the national level."
+    "hobbiesText": "In my free time, I enjoy participating in events such as hackathons, where I can collaborate with others and work on real-world ideas. During one hackathon, I worked in a team of three to develop a local event radar for the city where I currently live. I also took part in an entrepreneurship hackathon, collaborating with a team to identify challenges faced by newcomers and small businesses and propose practical solutions. Outside of tech, I am a big fan of Formula 1 and have a strong interest in history. Back in Ukraine, I participated in history Olympiads and achieved national-level recognition."
   },
   "navbar": {
     "about": "About",
@@ -71,6 +74,16 @@
     "language1": "English (Fluent)",
     "language2": "Ukrainian (Native)",
     "language3": "Polish (Fluent)",
-    "language4": "French (Learning)"
+    "language4": "French (Learning)",
+    "job1": {
+      "role": "Software Developer Intern",
+      "startDate": "July 2024",
+      "endDate": "September 2024",
+      "description": "Worked on frontend improvements and AI-powered features in a startup environment.",
+      "point1": "Improved and enhanced the frontend of the main application page using React",
+      "point2": "Learned and implemented AI workflows using LangChain and LangGraph",
+      "point3": "Collaborated with developers during team meetings to align technical solutions with product goals",
+      "point4": "Contributed to debugging, testing, and improving application performance"
+    }
   }
 }

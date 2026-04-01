@@ -1,13 +1,16 @@
 {
-  "about": {
+   "about": {
     "label": "À propos",
-  "title": "À propos",
-  "backgroundTitle": "Parcours",
-"backgroundText": "Je m'appelle Ostap et je suis originaire d'Ukraine. Il y a trois ans, j'ai déménagé à Mount Pearl, au Canada. Avant cela, j'ai vécu en Pologne de 2019 à 2022. Je suis une personne sociable et ouverte qui aime rencontrer de nouvelles personnes, apprendre en continu et s'améliorer. Je suis détendu, ouvert aux nouvelles opportunités et toujours prêt à relever de nouveaux défis. J'ai un fort esprit de compétition qui me pousse à dépasser mes limites et à atteindre mes objectifs personnels et professionnels. Je travaille dur et je cherche toujours à améliorer mes compétences et à évoluer en tant que personne. Je suis également passionné et créatif, cherchant constamment de nouvelles façons de m'exprimer et de donner vie à mes idées.",
-"valuesTitle": "Valeurs personnelles",
-"valuesText": "Je suis une personne travailleuse et dévouée qui s'efforce toujours de réaliser ses tâches avec le plus haut niveau de qualité. Je fournis constamment un travail de haute qualité et je suis fier de donner le meilleur de moi-même dans tout ce que je fais. Je suis créatif, curieux et ouvert d'esprit, avec un fort désir d'apprendre et de progresser continuellement. J'aime explorer de nouvelles idées et améliorer mes compétences. Je suis également une personne amicale et accessible qui valorise les relations positives avec les collègues et les clients. Ma nature bienveillante et solidaire me permet de contribuer à un environnement d'équipe positif et d'aider les autres lorsque c'est possible. L'honnêteté et l'humilité sont au cœur de mon caractère, guidant mes décisions et m'aidant à construire des relations solides et fiables. Je crois que la polyvalence et l'apprentissage continu sont essentiels pour la croissance personnelle et professionnelle.",
-"hobbiesTitle": "Loisirs et bénévolat",
-"hobbiesText": "Pendant mon temps libre, j'aime participer à différents événements, comme les hackathons. Lors de mon dernier hackathon, j'ai travaillé dans une équipe de trois personnes et contribué à la création d'un radar d'événements locaux pour la ville où je vis actuellement. J'ai également participé à un hackathon entrepreneurial local, où j'ai travaillé avec cinq autres membres de l'équipe pour identifier les problèmes rencontrés par les nouveaux arrivants et les nouvelles entreprises, ainsi que proposer des solutions. Je suis également un grand fan de Formule 1 et j'ai un fort intérêt pour l'histoire. En Ukraine, j'ai participé à des olympiades d'histoire et remporté des trophées au niveau national."
+    "title": "À propos de moi",
+
+    "backgroundTitle": "Parcours",
+    "backgroundText": "Je m’appelle Ostap, je suis un développeur logiciel junior originaire d’Ukraine et je vis actuellement au Canada. Il y a trois ans, j’ai déménagé à Mount Pearl après avoir vécu en Pologne de 2019 à 2022, où j’ai terminé mes études secondaires. Le fait de vivre dans différents pays m’a permis de devenir adaptable, ouvert d’esprit et à l’aise dans de nouveaux environnements. Je suis une personne sociable et positive qui aime rencontrer de nouvelles personnes, apprendre en continu et s’améliorer. Je suis toujours ouvert aux nouvelles opportunités et aux défis, et j’ai un esprit compétitif qui me pousse à dépasser mes limites et à évoluer autant sur le plan personnel que professionnel. Je suis passionné par la technologie et la créativité, toujours à la recherche de nouvelles façons de transformer des idées en solutions concrètes.",
+
+    "valuesTitle": "Valeurs personnelles",
+    "valuesText": "Je suis une personne travailleuse et engagée qui s’efforce toujours de fournir un travail de haute qualité. Je prends mes responsabilités au sérieux et je fais toujours de mon mieux dans chaque tâche. Je suis curieux, créatif et ouvert d’esprit, avec une forte volonté d’apprendre et de m’améliorer en continu. J’aime découvrir de nouvelles technologies, développer mes compétences et relever des défis. J’accorde une grande importance au travail d’équipe et aux relations positives, et je suis reconnu comme quelqu’un de fiable, accessible et prêt à aider les autres. L’honnêteté et l’humilité sont au cœur de ma personnalité et guident mes décisions. Je crois que l’adaptabilité, la polyvalence et l’apprentissage continu sont essentiels pour réussir à long terme.",
+
+    "hobbiesTitle": "Loisirs et bénévolat",
+    "hobbiesText": "Pendant mon temps libre, j’aime participer à des événements comme les hackathons, où je peux collaborer avec d’autres personnes et travailler sur des projets concrets. Lors d’un hackathon, j’ai travaillé en équipe de trois personnes pour créer une plateforme de type “event radar” pour la ville où je vis actuellement. J’ai également participé à un hackathon entrepreneurial, où j’ai collaboré avec une équipe pour identifier les défis rencontrés par les nouveaux arrivants et les petites entreprises, et proposer des solutions. En dehors de la programmation, je suis passionné de Formule 1 et j’ai un grand intérêt pour l’histoire. En Ukraine, j’ai participé à des olympiades d’histoire et j’ai obtenu des distinctions au niveau national."
 },
   "navbar": {
     "about": "À propos",
@@ -44,33 +47,49 @@
     "libraryDesc": "Un système de gestion de bibliothèque basé sur Java avec gestion des livres, logique d'emprunt, validation et tests unitaires."
   },
   "experience": {
-    "label": "Qualifications",
-    "title": "Expérience, formation et compétences",
-    "education": "Formation",
-    "diploma": "Diplôme en développement logiciel",
-    "certificates": "Certificats",
-    "technicalSkills": "Compétences techniques",
-    "workExperience": "Expérience",
-    "languages": "Langues",
-    "currentlyLearning": "En cours d'apprentissage",
-    "skillCategory1": "Langages de programmation et frameworks",
-    "skillCategory1Skills": "Python, JavaScript, React, HTML, CSS, Git Bash",
-    "skillCategory1Learning": "Java, Node.js, Express.js",
-    "skillCategory2": "Méthodologies et principes",
-    "skillCategory2Skills": "API RESTful, programmation orientée objet (POO), développement piloté par les tests (TDD), conception de bases de données, Agile, Scrum, Waterfall",
-    "skillCategory2Learning": "LangChain, LangGraph, amélioration continue des compétences",
-    "skillCategory3": "Outils et technologies",
-    "skillCategory3Skills": "AWS, Git, GitHub, Docker, Postman",
-    "skillCategory3Learning": "MongoDB, PostgreSQL",
-    "certificate1": "AWS Academy Graduate - AWS Cloud Foundations",
-    "certificate2": "AWS Academy Cloud Architecting",
-    "certificate3": "Google IT Support Professional Certificate",
-    "certificate4": "Google Cybersecurity Certificate",
-    "certificate5": "Coding for Success by ANC",
-    "certificate6": "Advanced Coding for Success by ANC",
-    "language1": "Anglais (courant)",
-    "language2": "Ukrainien (langue maternelle)",
-    "language3": "Polonais (courant)",
-    "language4": "Français (en apprentissage)"
+  "label": "Qualifications",
+  "title": "Expérience, formation et compétences",
+  "education": "Formation",
+  "diploma": "Diplôme en développement logiciel",
+  "certificates": "Certificats",
+  "technicalSkills": "Compétences techniques",
+  "workExperience": "Expérience",
+  "languages": "Langues",
+  "currentlyLearning": "En cours d'apprentissage",
+
+  "skillCategory1": "Langages de programmation et frameworks",
+  "skillCategory1Skills": "Python, JavaScript, React, HTML, CSS, Git Bash",
+  "skillCategory1Learning": "Java, Node.js, Express.js",
+
+  "skillCategory2": "Méthodologies et principes",
+  "skillCategory2Skills": "API RESTful, programmation orientée objet (POO), développement piloté par les tests (TDD), conception de bases de données, Agile, Scrum, Waterfall",
+  "skillCategory2Learning": "LangChain, LangGraph, amélioration continue des compétences",
+
+  "skillCategory3": "Outils et technologies",
+  "skillCategory3Skills": "AWS, Git, GitHub, Docker, Postman",
+  "skillCategory3Learning": "MongoDB, PostgreSQL",
+
+  "certificate1": "AWS Academy Graduate - AWS Cloud Foundations",
+  "certificate2": "AWS Academy Cloud Architecting",
+  "certificate3": "Google IT Support Professional Certificate",
+  "certificate4": "Google Cybersecurity Certificate",
+  "certificate5": "Coding for Success by ANC",
+  "certificate6": "Advanced Coding for Success by ANC",
+
+  "language1": "Anglais (courant)",
+  "language2": "Ukrainien (langue maternelle)",
+  "language3": "Polonais (courant)",
+  "language4": "Français (en apprentissage)",
+
+  "job1": {
+    "role": "Stagiaire Développeur Logiciel",
+    "startDate": "Juillet 2024",
+    "endDate": "Septembre 2024",
+    "description": "Travail sur des améliorations frontend et des fonctionnalités basées sur l’IA dans un environnement startup.",
+    "point1": "Amélioration et optimisation de l’interface principale de l’application avec React",
+    "point2": "Apprentissage et mise en œuvre de workflows IA avec LangChain et LangGraph",
+    "point3": "Collaboration avec les développeurs lors des réunions d’équipe pour aligner les solutions techniques avec les objectifs produit",
+    "point4": "Participation au débogage, aux tests et à l’amélioration des performances de l’application"
   }
+}
 }

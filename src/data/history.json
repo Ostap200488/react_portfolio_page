@@ -1,16 +1,16 @@
 [
   {
-    "role": "Software Developer Intern",
+    "role": "experience.job1.role",
     "organisation": "Atlantiq AI",
-    "startDate": "July 2024",
-    "endDate": "September 2024",
-    "description": "Worked on frontend improvements and AI-powered features in a startup environment.",
+    "startDate": "experience.job1.startDate",
+    "endDate": "experience.job1.endDate",
+    "description": "experience.job1.description",
     "technologies": ["React", "JavaScript", "Python", "LangChain", "LangGraph"],
     "experiences": [
-      "Improved and enhanced the frontend of the main application page using React",
-      "Learned and implemented AI workflows using LangChain and LangGraph",
-      "Collaborated with developers during team meetings to align technical solutions with product goals",
-      "Contributed to debugging, testing, and improving application performance"
+      "experience.job1.point1",
+      "experience.job1.point2",
+      "experience.job1.point3",
+      "experience.job1.point4"
     ]
   }
 ]

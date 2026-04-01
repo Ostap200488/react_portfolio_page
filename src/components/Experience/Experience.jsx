@@ -96,16 +96,16 @@ export const Experience = () => {
                   <div className={styles.historyHeader}>
                     <div>
                       <h4 className={styles.roleTitle}>
-                        {item.role}, {item.organisation}
+                        {t(item.role)}, {item.organisation}
                       </h4>
                       <p className={styles.date}>
-                        {item.startDate} - {item.endDate}
+                        {t(item.startDate)} - {t(item.endDate)}
                       </p>
                     </div>
                   </div>
 
                   {item.description && (
-                    <p className={styles.description}>{item.description}</p>
+                    <p className={styles.description}>{t(item.description)}</p>
                   )}
 
                   {item.technologies && item.technologies.length > 0 && (
@@ -120,7 +120,7 @@ export const Experience = () => {
 
                   <ul className={styles.experienceList}>
                     {item.experiences.map((exp, index) => (
-                      <li key={index}>{exp}</li>
+                      <li key={index}>{t(exp)}</li>
                     ))}
                   </ul>
                 </li>
