@@ -22,6 +22,12 @@ export const Hero = () => {
           {t("hero.contactBtn")}
         </a>
       </div>
+
+      <img
+        src="/portfolio.jpg"
+        alt="Ostap Demchuk"
+        className={styles.heroImg}
+      />
     </section>
   );
 };
