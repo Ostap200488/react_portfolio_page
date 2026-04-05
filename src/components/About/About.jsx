@@ -11,7 +11,7 @@ export const About = () => {
         <div className={styles.sectionHeader}>
           <span className={styles.sectionLabel}>{t("about.label")}</span>
           <h2 className={styles.title}>{t("about.title")}</h2>
-          <p className={styles.subtitle}>{t("about.intro")}</p>
+          <p className={styles.subtitle}>{t("")}</p>
         </div>
 
         <div className={styles.grid}>

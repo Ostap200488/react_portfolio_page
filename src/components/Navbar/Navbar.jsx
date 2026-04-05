@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
 import styles from "./Navbar.module.css";
-import { getImageUrl } from "../../utils";
 import { LanguageSwitcher } from "../LanguageSwitcher/LanguageSwitcher";
 
 export const Navbar = () => {
@@ -17,30 +16,35 @@ export const Navbar = () => {
       <div className={styles.menu}>
         <img
           className={styles.menuBtn}
-          src={
-            menuOpen
-              ? getImageUrl("nav/closeIcon.png")
-              : getImageUrl("nav/menuIcon.png")
-          }
-          alt="menu-button"
+          src={menuOpen ? "/nav/closeIcon.png" : "/nav/menuIcon.png"}
+          alt="menu button"
           onClick={() => setMenuOpen(!menuOpen)}
         />
 
         <ul
-          className={`${styles.menuItems} ${menuOpen ? styles.menuOpen : ""}`}
-          onClick={() => setMenuOpen(false)}
+          className={`${styles.menuItems} ${
+            menuOpen ? styles.menuOpen : ""
+          }`}
         >
           <li>
-            <a href="#about">{t("navbar.about")}</a>
+            <a href="#about" onClick={() => setMenuOpen(false)}>
+              {t("navbar.about")}
+            </a>
           </li>
           <li>
-            <a href="#experience">{t("navbar.experience")}</a>
+            <a href="#experience" onClick={() => setMenuOpen(false)}>
+              {t("navbar.experience")}
+            </a>
           </li>
           <li>
-            <a href="#projects">{t("navbar.projects")}</a>
+            <a href="#projects" onClick={() => setMenuOpen(false)}>
+              {t("navbar.projects")}
+            </a>
           </li>
           <li>
-            <a href="#contact">{t("navbar.contact")}</a>
+            <a href="#contact" onClick={() => setMenuOpen(false)}>
+              {t("navbar.contact")}
+            </a>
           </li>
           <li className={styles.langItem}>
             <LanguageSwitcher />
