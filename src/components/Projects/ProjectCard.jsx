@@ -2,6 +2,13 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 import styles from "./ProjectCard.module.css";
 
+import chatappImg from "../../../assets/projects/chatapp.png";
+import posImg from "../../../assets/projects/pos.png";
+import ecommerceImg from "../../../assets/projects/ecommerce.png";
+import medchatImg from "../../../assets/projects/medchat.png";
+import todoImg from "../../../assets/projects/todo.png";
+import libImg from "../../../assets/projects/lib.png";
+
 export const ProjectCard = ({
   project: { title, description, skills, demo, source },
 }) => {
@@ -10,17 +17,17 @@ export const ProjectCard = ({
   const getProjectImage = (title) => {
     switch (title) {
       case "ChatApp":
-        return "/assets/projects/chatapp.png";
+        return chatappImg;
       case "POS":
-        return "/assets/projects/pos.png";
+        return posImg;
       case "E-Commerce":
-        return "/assets/projects/ecommerce.png";
+        return ecommerceImg;
       case "Medical ChatBot":
-        return "/assets/projects/medchat.png";
+        return medchatImg;
       case "React Todo List":
-        return "/assets/projects/todo.png";
+        return todoImg;
       case "Library Management System":
-        return "/assets/projects/lib.png";
+        return libImg;
       default:
         return null;
     }
@@ -45,6 +52,7 @@ export const ProjectCard = ({
           return fallback;
       }
     }
+
     return fallback;
   };
 
@@ -86,14 +94,16 @@ export const ProjectCard = ({
           </a>
         )}
 
-        <a
-          href={source}
-          className={styles.link}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          {t("projects.source")}
-        </a>
+        {source && (
+          <a
+            href={source}
+            className={styles.link}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {t("projects.source")}
+          </a>
+        )}
       </div>
     </div>
   );
