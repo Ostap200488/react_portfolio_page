@@ -44,8 +44,16 @@
   opacity: 0.92;
 }
 
+/* 🔥 BUTTON CONTAINER */
+.actions {
+  display: flex;
+  gap: 16px; /* spacing between buttons */
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+/* 🔥 BUTTON STYLE (used for both) */
 .contactBtn {
-  margin-top: 10px;
   text-decoration: none;
   background-color: var(--color-primary);
   color: var(--color-text);
@@ -66,27 +74,21 @@
 }
 
 .heroImg {
-  width: min(42vw, 460px); 
-  height: auto;           
-  object-fit: contain;    
-  border-radius: 20px;    
+  width: min(42vw, 460px);
+  height: auto;
+  object-fit: contain;
+  border-radius: 20px;
   flex-shrink: 0;
   display: block;
   border: 2px solid rgba(255, 255, 255, 0.1);
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
 }
 
-/* kept only in case you want it later, but it is no longer used */
+/* OPTIONAL EFFECT */
 @keyframes floating {
-  0% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
 }
 
 .topBlur,
@@ -114,6 +116,7 @@
   background: rgba(25, 55, 109, 0.18);
 }
 
+/* 📱 TABLET */
 @media screen and (max-width: 900px) {
   .container {
     padding-top: 24px;
@@ -131,20 +134,31 @@
     max-width: 100%;
   }
 
+  .actions {
+    justify-content: center;
+  }
+
   .heroImg {
     width: min(70vw, 360px);
   }
 }
 
+/* 📱 MOBILE */
 @media screen and (max-width: 600px) {
   .container {
     padding-top: 18px;
     gap: 20px;
   }
 
+  .actions {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
   .contactBtn {
     width: 100%;
-    max-width: 240px;
+    max-width: 260px;
     text-align: center;
   }
 

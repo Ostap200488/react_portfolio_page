@@ -15,12 +15,22 @@ export const Hero = () => {
         <p className={styles.description}>{t("hero.description3")}</p>
         <p className={styles.description}>{t("hero.description4")}</p>
 
-        <a
-          href="mailto:ostap.04.0604.67@gmail.com"
-          className={styles.contactBtn}
-        >
-          {t("hero.contactBtn")}
-        </a>
+        <div className={styles.actions}>
+          <a
+            href="mailto:ostap.04.0604.67@gmail.com"
+            className={styles.contactBtn}
+          >
+            {t("hero.contactBtn")}
+          </a>
+
+          <a
+            href="/resume.pdf"
+            download
+            className={styles.contactBtn}
+          >
+            {t("My resume")}
+          </a>
+        </div>
       </div>
 
       <img
